@@ -1,19 +1,45 @@
-# vue-dragger
+### Vue-Dragger
 
-## Project setup
-```
-npm install
-```
+![](demo.gif)
 
-### Compiles and hot-reloads for development
-```
+### Installation & Dependencies
+
+- [NodeJS](https://nodejs.org/en/)
+- [VueJS](https://vuejs.org/)
+
+### Usage
+
+- To start a development server access the project directory through Terminal/Command Prompt and type in
+
+```bash
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
+- The component can be utitlized to make other components draggable. Simply import the `VueDraggable` component and insert any other components within it.
+
+```html
+  <VueDragger>
+    <Component1 />
+    <Component2 />
+  </VueDragger>
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- Methods can be called on drag start and drag end by passing them as `props`. Use the `onDragStart` and `onDragEnd` events to accomplish the same.
+
+```html
+  <VueDragger :onDragStart="start" :onDragEnd="stop">
+    <Component />
+  </VueDragger>
+```
+
+### TO-DO
+
+[ ] Add more functionality
+[ ] Allow passing data and display it as a draggable list of items.
+[ ] Fix bugs if any
+
+### Note
+
+> The draggable component encloses other component inside a `div` of its own and hence the styling should be done keeping this in mind.
+
+

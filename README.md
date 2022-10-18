@@ -1,6 +1,6 @@
 ### Vue-Dragger
 
-![](demo.gif)
+![](vuedragger_demo.gif)
 
 ### Installation & Dependencies
 

@@ -1,17 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <img alt="Vue logo" src="./assets/logo.png" />
+  <VueDragger :onDragStart="start" :onDragEnd="stop">
+  </VueDragger>
+  <HelloWorld msg="Make your components draggable with ease." />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "@/components/HelloWorld.vue";
+import VueDragger from "@/components/VueDragger.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    HelloWorld,
+    // VueDragger,
+  },
+  methods: {
+    start() {
+      console.log("Starting Drag!");
+    },
+    stop() {
+      console.log("Stopping Drag!");
+    },
+  },
+};
 </script>
 
 <style>

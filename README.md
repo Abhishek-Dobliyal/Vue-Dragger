@@ -34,9 +34,9 @@ npm run serve
 
 ### TO-DO
 
-[ ] Add more functionality
-[ ] Allow passing data and display it as a draggable list of items.
-[ ] Fix bugs if any
+[] Add more functionality
+[] Allow passing data and display it as a draggable list of items.
+[] Fix bugs if any
 
 ### Note
 

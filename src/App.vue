@@ -1,6 +1,6 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
   <VueDragger :onDragStart="start" :onDragEnd="stop">
+    <img alt="Vue logo" src="./assets/logo.png" />
   </VueDragger>
   <HelloWorld msg="Make your components draggable with ease." />
 </template>
@@ -13,7 +13,7 @@ export default {
   name: "App",
   components: {
     HelloWorld,
-    // VueDragger,
+    VueDragger,
   },
   methods: {
     start() {

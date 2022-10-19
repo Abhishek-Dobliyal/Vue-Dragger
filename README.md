@@ -15,7 +15,7 @@
 npm run serve
 ```
 
-- The component can be utitlized to make other components draggable. Simply import the `VueDraggable` component and insert any other components within it.
+- The component can be utitlized to make other components draggable. Simply import the `VueDraggable` component and insert any other components inside it.
 
 ```html
   <VueDragger>
@@ -24,7 +24,7 @@ npm run serve
   </VueDragger>
 ```
 
-- Methods can be called on drag start and drag end by passing them as `props`. Use the `onDragStart` and `onDragEnd` events to accomplish the same.
+- Methods can be called on drag start and drag end by passing them as `props`. Use the `onDragStart` and `onDragEnd` props to accomplish the same.
 
 ```html
   <VueDragger :onDragStart="start" :onDragEnd="stop">
